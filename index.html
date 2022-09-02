@@ -5,22 +5,39 @@
 <meta charset="utf-8">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-76CD8NR959"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-76CD8NR959');
+<script src="windowData.js"></script>
+<style>
+  div {
+  margin-top: 110px;
+  text-align: right;
+  }
+  a {
+    text-decoration: none;
+    color: darkblue;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
 </script>
+<script src="colors.js"></script>
 </head>
 <body>
+  <script>
+    $.cookie('darkmode');
+  </script>
   <h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="1.html">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">JavaScript</a></li>
-</ol>
-<h2>Welcom!</h2>
-장석준
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>Welcom!</h2>
+  <img src="web.jpg" width="700px"><br><br>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this)">
+  <div>
+    -Seokjun Jang-
+  </div>
 </body>
 </html>
